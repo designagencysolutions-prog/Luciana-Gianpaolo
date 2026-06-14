@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luciana &amp; Gianpaolo — We're Getting Married</title>
+  <title>Luciana &amp; Gianpaolo — Ci sposiamo!</title>
+
+  <!-- Anteprima condivisione (WhatsApp / social) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Luciana &amp; Gianpaolo — Ci sposiamo!" />
+  <meta property="og:description" content="13 Agosto 2026 · Santuario della Madonna del Carmine. Vi aspettiamo per celebrare insieme!" />
+  <meta property="og:image" content="https://designagencysolutions-prog.github.io/Luciana-Gianpaolo/assets/share.jpg" />
+  <meta property="og:url" content="https://designagencysolutions-prog.github.io/Luciana-Gianpaolo/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#faf6f0" />
 
   <!-- ============================================================
        EDIT ME: Quick-change checklist
@@ -138,7 +147,7 @@
     /* Sfondo della hero (piu tenue) */
     .hero::before {
       content: ''; position: absolute; inset: 0; z-index: 0;
-      background: url('assets/sfondo.png') center / cover no-repeat;
+      background: url('assets/sfondo.jpg') center / cover no-repeat;
       opacity: .5;
     }
     /* Alone bianco centrale: dietro il testo i fiori diventano quasi impercettibili */
@@ -483,7 +492,7 @@
     /* ---------- CONFERMA / RSVP ---------- */
     #rsvp {
       position: relative; padding-top: 3.5rem;
-      background: url('assets/sfondo.png') center / cover no-repeat, var(--bg);
+      background: url('assets/sfondo.jpg') center / cover no-repeat, var(--bg);
     }
     /* copre i fiori in alto: il testo resta su fondo pulito, poi sfuma */
     #rsvp::before {
@@ -588,7 +597,7 @@
     .qr-card {
       position: relative; z-index: 1; width: 100%; max-width: 460px;
       background: var(--bg);
-      background-image: url('assets/sfondo.png');
+      background-image: url('assets/sfondo.jpg');
       background-size: 140% auto; background-position: center -20px; background-repeat: no-repeat;
       border-radius: 20px; padding: 3rem 2rem 2.4rem; text-align: center;
       border: 1px solid rgba(176, 141, 87, .4);
@@ -772,14 +781,14 @@
 
       <div class="ceremony-grid">
         <div class="ce-block">
-          <img class="ce-photo" src="assets/Carmine.png" alt="Santuario della Madonna del Carmine" />
+          <img class="ce-photo" src="assets/Carmine.jpg" alt="Santuario della Madonna del Carmine" loading="lazy" />
           <p class="ce-time">Ore 16:30</p>
           <p class="ce-venue">Santuario della Madonna del Carmine</p>
           <p class="ce-addr">Montefalcone di Val Fortore (BN)</p>
           <a class="ce-map" href="https://www.google.com/maps/place/Santuario+della+Madonna+del+Carmine/@41.327992,15.0124603,17z/data=!3m1!4b1!4m6!3m5!1s0x133a1e74a51b8165:0xc4ef9e4fa931cb00!8m2!3d41.327988!4d15.0150406!16s%2Fg%2F1tg2yln4?hl=en-PT&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Come arrivare &rarr;</a>
         </div>
         <div class="ce-block">
-          <img class="ce-photo" src="assets/Borgo.png" alt="Al Borgo degli Angeli" />
+          <img class="ce-photo" src="assets/Borgo.jpg" alt="Al Borgo degli Angeli" loading="lazy" />
           <p class="ce-time">Ore 19:00</p>
           <p class="ce-venue">Al Borgo degli Angeli</p>
           <p class="ce-addr">Contrada Montebello — San Nicola Manfredi (BN)</p>
@@ -864,8 +873,8 @@
       <!-- EDIT:RSVP -->
       <div class="mt">
         <a class="rsvp-letter" href="https://api.whatsapp.com/send/?phone=393480372921&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="Conferma la tua presenza">
-          <img class="rsvp-envelope" src="assets/lettera.png" alt="" />
-          <img class="rsvp-seal" src="assets/sigillo.png" alt="Conferma la tua presenza" />
+          <img class="rsvp-envelope" src="assets/lettera.png" alt="" loading="lazy" />
+          <img class="rsvp-seal" src="assets/sigillo.png" alt="Conferma la tua presenza" loading="lazy" />
         </a>
       </div>
     </div>
@@ -874,7 +883,7 @@
 
   <!-- Polaroid fluttuante (compare allo scroll) -->
   <a class="polaroid-fab" href="#" aria-label="Condividi le foto del matrimonio">
-    <img src="assets/polaroid.png" alt="Polaroid" />
+    <img src="assets/polaroid.png" alt="Polaroid" loading="lazy" />
   </a>
 
   <!-- Modal: condivisione foto con QR -->
@@ -885,7 +894,7 @@
       <div class="qr-deco">❦</div>
       <p class="qr-title">Il giorno del nostro matrimonio potete condividere le foto con noi tramite questo <strong>QR code</strong>!</p>
       <a class="qr-link" href="https://dashboard.togevent.com/app/invite?c=o0qw7891dt" target="_blank" rel="noopener">
-        <img class="qr-img" src="assets/QR.png" alt="QR code per condividere le foto" />
+        <img class="qr-img" src="assets/QR.png" alt="QR code per condividere le foto" loading="lazy" />
         <img class="qr-logo" src="assets/Logo.png" alt="" aria-hidden="true" />
       </a>
       <a class="qr-cta" href="https://dashboard.togevent.com/app/invite?c=o0qw7891dt" target="_blank" rel="noopener">oppure tocca qui per aprire &rarr;</a>
